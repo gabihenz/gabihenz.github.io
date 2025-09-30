@@ -10,8 +10,8 @@
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Jogo oceano.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Jogo oceano" startnode="10" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="219A80EF-C14B-4838-A55E-942936EE9FFB" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
-  background: linear-gradient(180deg, #02083E 0%, #0767ED 100%);
-  color: #fff;
+  background: radial-gradient(circle at 50% 20%, #031956 0%, #02083E 40%, #000010 100%);
+  color: #e0f7fa; /* tom azulado suave em vez de branco puro */
   font-family: 'Press Start 2P', sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -21,6 +21,10 @@
   align-items: flex-start;
   min-height: 100vh;
   box-sizing: border-box;
+
+  /* Efeito "névoa subaquática" */
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 tw-sidebar {
@@ -28,78 +32,82 @@ tw-sidebar {
 }
 
 tw-passage {
-  background: rgba(0, 0, 0, 0.5);
-  border: 2px solid #fff;
-  border-radius: 16px;
+  background: rgba(0, 20, 40, 0.6);
+  border: 2px solid rgba(0, 234, 255, 0.4);
+  border-radius: 20px;
   padding: 30px;
   max-width: 800px;
   width: 100%;
-  box-shadow: 0 0 15px rgba(2, 8, 62, 0.8);
+  box-shadow: 0 0 25px rgba(0, 234, 255, 0.15), 0 0 60px rgba(0, 0, 50, 0.6);
   margin: auto;
+  transition: background 0.3s;
 }
 
-
+tw-passage:hover {
+  background: rgba(0, 20, 40, 0.75);
+}
 tw-link {
   display: inline-block;
-  margin: 10px 5px;
-  padding: 10px 20px;
-  background: radial-gradient(circle at 40% 40%, #02083E, #00031a);
-  color: #fff;
+  margin: 8px 5px;
+  padding: 10px 22px;
+  background: linear-gradient(145deg, #03255c, #01122f);
+  color: #e0f7fa;
   text-decoration: none;
   font-family: 'Press Start 2P', sans-serif;
-  font-size: 18px;
-  border-radius: 50px;
+  font-size: 16px;
+  border-radius: 30px;
   box-shadow:
-    0 6px #00031a,
-    inset 0 4px 6px rgba(255, 255, 255, 0.3),
-    inset 0 -4px 6px rgba(0, 0, 0, 0.7);
+    0 2px 6px rgba(0, 0, 0, 0.6),
+    inset 0 2px 4px rgba(255, 255, 255, 0.08);
   text-align: center;
-  transition: transform 0.1s, box-shadow 0.1s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, text-shadow 0.2s ease;
 }
 
 tw-link:hover {
-  transform: scale(1.05);
-  color: #00eaff;
-  text-shadow: 0 0 8px #00eaff;
+  transform: scale(1.04);
+  color: #a8faff;
+  text-shadow: 0 0 6px #00eaff, 0 0 12px #0077b6;
+  box-shadow:
+    0 3px 10px rgba(0, 234, 255, 0.25),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 tw-link:active {
-  transform: scale(0.95);
+  transform: scale(0.96);
   box-shadow:
-    0 3px #00031a,
-    inset 0 2px 4px rgba(255, 255, 255, 0.2),
-    inset 0 -2px 4px rgba(0, 0, 0, 0.7);
+    0 2px 6px rgba(0, 0, 0, 0.6),
+    inset 0 1px 3px rgba(255, 255, 255, 0.08);
 }
 
 
-tw-passage[tags~="peixe"] {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("imagens/peixe.png");
+tw-passage[tags~="inicio"] {
+  text-align: center;
+}
+
+tw-passage[tags~="peixe"],
+tw-passage[tags~="tartaruga"],
+tw-passage[tags~="tubarao"],
+tw-passage[tags~="baleia"] {
+  background-color: rgba(0, 20, 40, 0.6);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 200px auto;
+  background-size: 220px auto;
+}
+
+/* Pequeno brilho nos sprites */
+tw-passage[tags~="peixe"] {
+  background-image: url("imagens/peixe.png");
 }
 tw-passage[tags~="tartaruga"] {
-  background-color: rgba(0, 0, 0, 0.5);
   background-image: url("imagens/tartaruga.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 200px auto;
 }
 tw-passage[tags~="tubarao"] {
-  background-color: rgba(0, 0, 0, 0.5);
   background-image: url("imagens/tubarao.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 200px auto;
 }
 tw-passage[tags~="baleia"] {
-  background-color: rgba(0, 0, 0, 0.5);
   background-image: url("imagens/baleia.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 200px auto;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Antártica" tags="" position="200,425" size="100,100">(link: &quot;&lt;img src=&#39;imagens/inicio.png&#39; width=&#39;30&#39;&gt;&quot;)[
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Antártica" tags="" position="200,425" size="100,100">(link: &quot;&lt;img src=&#39;imagens/inicio.png&#39; width=&#39;30&#39;&gt;&quot;)[
   (goto: &quot;inicio&quot;)
 ]
 Os pinguins te recebem com um abraço quentinho. Eles dizem que eles tem 
@@ -212,7 +220,7 @@ Pela minha ideia genial.&quot;
 ]
 Ninguém comparece ao discurso.
 Então, decidimos:
-[[fazer um discurso conscientizando sobre a pesca ilegal]]</tw-passagedata><tw-passagedata pid="10" name="inicio" tags="inicio" position="100,50" size="100,100">
+[[fazer um discurso conscientizando sobre a pesca ilegal]]</tw-passagedata><tw-passagedata pid="10" name="inicio" tags="inicio" position="100,50" size="100,100">&lt;img src=&#39;imagens/fundo_inicio.png&#39; style=&quot;max-width:100%;&quot;&gt;
 [[Jogar]]</tw-passagedata><tw-passagedata pid="11" name="investigar" tags="" position="200,300" size="100,100">(link: &quot;&lt;img src=&#39;imagens/inicio.png&#39; width=&#39;30&#39;&gt;&quot;)[
   (goto: &quot;inicio&quot;)
 ]
