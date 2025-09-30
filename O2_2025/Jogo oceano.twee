@@ -1,0 +1,191 @@
+:: StoryTitle
+Jogo oceano
+
+
+:: StoryData
+{
+  "ifid": "219A80EF-C14B-4838-A55E-942936EE9FFB",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "inicio",
+  "zoom": 1
+}
+
+
+:: Antártica {"position":"175,350","size":"100,100"}
+Os pinguins te recebem com um abraço quentinho. Eles dizem que eles tem 
+uma amiga bem inteligente e legal, eles  te levam até ela. Ela é a grandiosa  Josefina Castellví Piulachs. Josefina é uma oceonógrafa que escreveu sobre os oceanos e a Antártica. Ela perguntou porque chegaram aqui.
+
+Nós dissemos:
+
+-  Estamos aqui porque o nosso amigo peixe está com problemas no seu lar.
+
+Josefina diz:
+- O lixo jogado nas praias é arrastado pelas ondas e suja o mar. Precisamos impedir  isso! O mar é nossso também.
+
+Lembramos que na Praia Pelicano havia muito plástico no mar e lixo na areia.
+
+O que você faz:
+
+[[Você não está nem aí e não presta atenção]]
+ou
+[[Ir para a praia Pelicano]]
+
+
+:: Continuar limpando {"position":"350,500","size":"100,100"}
+Nós continuamos limpando até que tudo fique limpo.
+Olhamos o mapa que tinhamos achado e pensamos em:
+
+
+[[Ir para o X do mapa]]
+ou
+[[Continuar limpando]]
+
+
+:: Créditos {"position":"200,850","size":"100,100"}
+Roteiro
+Programação
+Ilustração
+
+GABRIELA SILVA HENZ 
+NATHALIE ROSSI LOUZI
+NICOLAS ROSSI LOUZI
+
+
+Ano
+
+2025
+
+
+:: Groelândia {"position":"350,225","size":"100,100"}
+Os amigos chegam na Groelândia. 
+Lá encontram uma Baleia-da-groenlândia que chama seu melhor amigo o senhor Narval. Ele fala que nunca viu um pinguim na vida.
+
+Você decide ir para a [[Antártica]]
+ou
+você decide seguir na [[Groelândia]]
+
+
+:: Ir para a praia Pelicano {"position":"175,475","size":"100,100"}
+De volta a Praia Pelicano procuramos amigos para ajudar a limpar a praia (areia e água).
+Enquanto limpávamos a praia, encontramos um mapa enterrado na areia que  reunia tubarões no Oceano Índico.
+O que você faz:
+[[Ir para o X do mapa]]
+ou
+[[Continuar limpando]]
+
+
+:: Ir para o X do mapa {"position":"200,600","size":"100,100"}
+Chegando lá, encontramos um cardume de tubarões curiosos querendo saber o que estávamos fazendo naquele lugar.
+Até que aparece uma mulher que fala:
+
+- Tragam eles até aqui!   
+
+Ela nos recepciona e pergunta o que estamos fazendo aqui.
+
+Nós respondemos em coro:
+
+- Nós seguimos esse mapa misterioso com tubarões, ele estava enterrado na areia de uma praia.
+
+A mulher fala que é Eugenie Clark, a dama tubarão, bióloga marinha, que nos canta uma canção:
+ 
+ "Redes de pesca e caça ilegal
+ Não deveriam ser algo normal
+ Peixes morrem e tudo mais
+ Existem coisas mais legais."
+ 
+ Decidimos voltar para a praia Pelicano e:
+ 
+[[fazer um discurso sobre uma festa com muito chocolate]]
+ou
+[[fazer um discurso conscientizando sobre a pesca ilegal]]
+
+
+:: Você não está nem aí e não presta atenção {"position":"350,350","size":"100,100"}
+Josefina percebe que nós ignoramos totalmente a situação e explica com mais calma a importância sobre limpar o mar.
+
+[[Você não está nem aí e não presta atenção de novo ->Você não está nem aí e não presta atenção]] 
+ou
+[[Ir para a praia Pelicano]]
+
+
+:: fazer um discurso conscientizando sobre a pesca ilegal {"position":"200,725","size":"100,100"}
+Um monte de pessoas aparecem e no final todos batem palmas.  
+Com a população conscientizada os pescadores ilegais deram no pé. 
+
+
+Um golfinho, de cor violeta, interessado no assunto, apareceu e disse que gostou muito do discurso. Ele nos conta que conhece outra pessoa interessada no mar e nos guia para a casa dela.
+
+Chegando lá, nos apresentamos para a mulher que nos recebia com hospitalidade. Ela disse que nos conhecia por nossas boas ações com o meio ambiente e o planeta.
+Essa mulher é Marie Tharp, cartógrafa que mapeou o assoalho oceânico.
+
+Marie fala que desenhou o mapa que nos levou até a Eugenie e foi dela o poema que nos levou até a Josefina. Então finaliza dizendo outro poema:
+
+"Resolvido os problemas
+Acabou-se os dilemas 
+Tudo ficou mais legal
+Pela minha ideia genial."
+
+[[Créditos]]
+
+
+:: fazer um discurso sobre uma festa com muito chocolate {"position":"350,625","size":"100,100"}
+Ninguém comparece ao discurso.
+
+[[fazer um discurso conscientizando sobre a pesca ilegal]]
+
+
+:: inicio {"position":"125,100","size":"100,100"}
+Somos três amigos na praia Pelicano, de férias. Eis que aparece um peixe, ele é verde e tem olhos azuis. Ele fala:
+- Preciso de ajuda. Não sei o que está acontecendo, mas tem muitos peixes morrendo. Meu lar está sendo destruído!!!
+
+Na borda da praia achamos uma garrafa que tinha dentro um papel. 
+
+[[investigar]]
+ou
+[[jogar a garrafa no mar]]
+
+
+:: investigar {"position":"175,225","size":"100,100"}
+O papel dizia:
+
+"Gelo gelo 
+Pinguim não tem cabelo
+Mas ele tem pelo"
+
+
+"O pinguim tem um tio
+Que adora o frio"
+
+
+
+Os amigos dizem:
+- Já sei nós devemos seguir para:
+
+[[Groelândia]]
+ou
+[[Antártica]]
+
+
+:: jogar a garrafa no mar {"position":"275,100","size":"100,100"}
+Uma tartagura que estava passando pegou a garrafa e jogou na sua cara.
+
+O que você faz:
+
+[[investigar]] 
+ou
+[[jogar novamente no mar]]
+
+
+:: jogar novamente no mar {"position":"400,100","size":"100,100"}
+A tartagura fica irritada e joga a garrafa com muuuuuuuuuita força na cara de um amigo.
+E ela disse:
+
+- Não suje a minha casa. Suje a suas!!!
+
+
+O que você faz:
+
+[[investigar]] 
+ou
+[[jogar novamente no mar]]
