@@ -12,7 +12,7 @@ Jogo oceano
 }
 
 
-:: Antártica {"position":"200,425","size":"100,100"}
+:: Antártica [pinguim] {"position":"200,425","size":"100,100"}
 (link: "<img src='imagens/inicio.png' width='30'>")[
   (goto: "inicio")
 ]
@@ -33,12 +33,7 @@ O que você faz:
 [[Você não está nem aí e não presta atenção]]
 ou
 [[Ir para a praia Pelicano]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: Continuar limpando {"position":"375,575","size":"100,100"}
@@ -52,12 +47,7 @@ Olhamos o mapa que tinhamos achado e pensamos em:
 [[Ir para o X do mapa]]
 ou
 [[Continuar limpando]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: Créditos {"position":"225,925","size":"100,100"}
@@ -75,12 +65,7 @@ NICOLAS ROSSI LOUZI
 
 Ano
 2025
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: Groelândia [baleia] {"position":"375,300","size":"100,100"}
@@ -93,12 +78,7 @@ Lá encontram uma Baleia-da-groenlândia que chama seu melhor amigo o senhor Nar
 Você decide ir para a [[Antártica]]
 ou
 você decide seguir na [[Groelândia]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: Ir para a praia Pelicano {"position":"200,550","size":"100,100"}
@@ -111,12 +91,7 @@ O que você faz:
 [[Ir para o X do mapa]]
 ou
 [[Continuar limpando]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: Ir para o X do mapa [tubarao] {"position":"225,675","size":"100,100"}
@@ -146,12 +121,7 @@ A mulher fala que é Eugenie Clark, a dama tubarão, bióloga marinha, que nos c
 [[fazer um discurso sobre uma festa com muito chocolate]]
 ou
 [[fazer um discurso conscientizando sobre a pesca ilegal]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: Jogar [peixe] {"position":"175,175","size":"100,100"}
@@ -166,12 +136,7 @@ Na borda da praia achamos uma garrafa que tinha dentro um papel.
 [[investigar]]
 ou
 [[jogar a garrafa no mar]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: Você não está nem aí e não presta atenção {"position":"375,425","size":"100,100"}
@@ -183,12 +148,7 @@ Josefina percebe que nós ignoramos totalmente a situação e explica com mais c
 [[Você não está nem aí e não presta atenção de novo ->Você não está nem aí e não presta atenção]] 
 ou
 [[Ir para a praia Pelicano]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: fazer um discurso conscientizando sobre a pesca ilegal {"position":"225,800","size":"100,100"}
@@ -212,12 +172,7 @@ Tudo ficou mais legal
 Pela minha ideia genial."
 
 [[Créditos]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: fazer um discurso sobre uma festa com muito chocolate {"position":"375,700","size":"100,100"}
@@ -227,12 +182,7 @@ Pela minha ideia genial."
 Ninguém comparece ao discurso.
 Então, decidimos:
 [[fazer um discurso conscientizando sobre a pesca ilegal]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: inicio [inicio] {"position":"100,50","size":"100,100"}
@@ -259,12 +209,7 @@ Os amigos dizem:
 [[Groelândia]]
 ou
 [[Antártica]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: jogar a garrafa no mar [tartaruga] {"position":"300,175","size":"100,100"}
@@ -278,12 +223,7 @@ O que você faz:
 [[investigar]] 
 ou
 [[jogar novamente no mar]]
-
-
-
-
-
-
+<br/><br/><br/>
 
 
 :: jogar novamente no mar [tartaruga] {"position":"425,175","size":"100,100"}
@@ -301,12 +241,22 @@ O que você faz:
 [[investigar]] 
 ou
 [[jogar novamente no mar]]
+<br/><br/><br/>
 
 
+:: StoryScript [script]
+if (!window.bgMusic) {
+  window.bgMusic = new Audio("som/fundo.ogg");
+  window.bgMusic.loop = true;
+  window.bgMusic.volume = 0.5;
+  window.bgMusic.autoplay = true;
 
-
-
-
+  document.addEventListener("click", () => {
+    if (window.bgMusic.paused) {
+      window.bgMusic.play();
+    }
+  });
+}
 
 
 :: StoryStylesheet [stylesheet]
@@ -407,4 +357,7 @@ tw-passage[tags~="tubarao"] {
 }
 tw-passage[tags~="baleia"] {
   background-image: url("imagens/baleia.png");
+}
+tw-passage[tags~="pinguim"] {
+  background-image: url("imagens/pinguim.png");
 }
