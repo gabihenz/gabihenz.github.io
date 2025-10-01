@@ -12,7 +12,10 @@ Jogo oceano
 }
 
 
-:: Antártica {"position":"175,350","size":"100,100"}
+:: Antártica {"position":"200,425","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 Os pinguins te recebem com um abraço quentinho. Eles dizem que eles tem 
 uma amiga bem inteligente e legal, eles  te levam até ela. Ela é a grandiosa  Josefina Castellví Piulachs. Josefina é uma oceonógrafa que escreveu sobre os oceanos e a Antártica. Ela perguntou porque chegaram aqui.
 
@@ -32,7 +35,16 @@ ou
 [[Ir para a praia Pelicano]]
 
 
-:: Continuar limpando {"position":"350,500","size":"100,100"}
+
+
+
+
+
+
+:: Continuar limpando {"position":"375,575","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 Nós continuamos limpando até que tudo fique limpo.
 Olhamos o mapa que tinhamos achado e pensamos em:
 
@@ -42,7 +54,16 @@ ou
 [[Continuar limpando]]
 
 
-:: Créditos {"position":"200,850","size":"100,100"}
+
+
+
+
+
+
+:: Créditos {"position":"225,925","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 Roteiro
 Programação
 Ilustração
@@ -53,11 +74,19 @@ NICOLAS ROSSI LOUZI
 
 
 Ano
-
 2025
 
 
-:: Groelândia {"position":"350,225","size":"100,100"}
+
+
+
+
+
+
+:: Groelândia [baleia] {"position":"375,300","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 Os amigos chegam na Groelândia. 
 Lá encontram uma Baleia-da-groenlândia que chama seu melhor amigo o senhor Narval. Ele fala que nunca viu um pinguim na vida.
 
@@ -66,7 +95,16 @@ ou
 você decide seguir na [[Groelândia]]
 
 
-:: Ir para a praia Pelicano {"position":"175,475","size":"100,100"}
+
+
+
+
+
+
+:: Ir para a praia Pelicano {"position":"200,550","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 De volta a Praia Pelicano procuramos amigos para ajudar a limpar a praia (areia e água).
 Enquanto limpávamos a praia, encontramos um mapa enterrado na areia que  reunia tubarões no Oceano Índico.
 O que você faz:
@@ -75,7 +113,16 @@ ou
 [[Continuar limpando]]
 
 
-:: Ir para o X do mapa {"position":"200,600","size":"100,100"}
+
+
+
+
+
+
+:: Ir para o X do mapa [tubarao] {"position":"225,675","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 Chegando lá, encontramos um cardume de tubarões curiosos querendo saber o que estávamos fazendo naquele lugar.
 Até que aparece uma mulher que fala:
 
@@ -101,7 +148,36 @@ ou
 [[fazer um discurso conscientizando sobre a pesca ilegal]]
 
 
-:: Você não está nem aí e não presta atenção {"position":"350,350","size":"100,100"}
+
+
+
+
+
+
+:: Jogar [peixe] {"position":"175,175","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
+Somos três amigos na praia Pelicano, de férias. Eis que aparece um peixe, ele é verde e tem olhos azuis. Ele fala:
+- Preciso de ajuda. Não sei o que está acontecendo, mas tem muitos peixes morrendo. Meu lar está sendo destruído!!!
+
+Na borda da praia achamos uma garrafa que tinha dentro um papel. 
+
+[[investigar]]
+ou
+[[jogar a garrafa no mar]]
+
+
+
+
+
+
+
+
+:: Você não está nem aí e não presta atenção {"position":"375,425","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 Josefina percebe que nós ignoramos totalmente a situação e explica com mais calma a importância sobre limpar o mar.
 
 [[Você não está nem aí e não presta atenção de novo ->Você não está nem aí e não presta atenção]] 
@@ -109,7 +185,16 @@ ou
 [[Ir para a praia Pelicano]]
 
 
-:: fazer um discurso conscientizando sobre a pesca ilegal {"position":"200,725","size":"100,100"}
+
+
+
+
+
+
+:: fazer um discurso conscientizando sobre a pesca ilegal {"position":"225,800","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 Um monte de pessoas aparecem e no final todos batem palmas.  
 Com a população conscientizada os pescadores ilegais deram no pé. 
 
@@ -129,35 +214,44 @@ Pela minha ideia genial."
 [[Créditos]]
 
 
-:: fazer um discurso sobre uma festa com muito chocolate {"position":"350,625","size":"100,100"}
-Ninguém comparece ao discurso.
 
+
+
+
+
+
+:: fazer um discurso sobre uma festa com muito chocolate {"position":"375,700","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
+Ninguém comparece ao discurso.
+Então, decidimos:
 [[fazer um discurso conscientizando sobre a pesca ilegal]]
 
 
-:: inicio {"position":"125,100","size":"100,100"}
-Somos três amigos na praia Pelicano, de férias. Eis que aparece um peixe, ele é verde e tem olhos azuis. Ele fala:
-- Preciso de ajuda. Não sei o que está acontecendo, mas tem muitos peixes morrendo. Meu lar está sendo destruído!!!
-
-Na borda da praia achamos uma garrafa que tinha dentro um papel. 
-
-[[investigar]]
-ou
-[[jogar a garrafa no mar]]
 
 
-:: investigar {"position":"175,225","size":"100,100"}
+
+
+
+
+:: inicio [inicio] {"position":"100,50","size":"100,100"}
+<img src='imagens/fundo_inicio.png' style="max-width:100%;">
+[[Jogar]]
+
+
+:: investigar {"position":"200,300","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 O papel dizia:
 
 "Gelo gelo 
 Pinguim não tem cabelo
 Mas ele tem pelo"
 
-
 "O pinguim tem um tio
 Que adora o frio"
-
-
 
 Os amigos dizem:
 - Já sei nós devemos seguir para:
@@ -167,7 +261,16 @@ ou
 [[Antártica]]
 
 
-:: jogar a garrafa no mar {"position":"275,100","size":"100,100"}
+
+
+
+
+
+
+:: jogar a garrafa no mar [tartaruga] {"position":"300,175","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 Uma tartagura que estava passando pegou a garrafa e jogou na sua cara.
 
 O que você faz:
@@ -177,7 +280,16 @@ ou
 [[jogar novamente no mar]]
 
 
-:: jogar novamente no mar {"position":"400,100","size":"100,100"}
+
+
+
+
+
+
+:: jogar novamente no mar [tartaruga] {"position":"425,175","size":"100,100"}
+(link: "<img src='imagens/inicio.png' width='30'>")[
+  (goto: "inicio")
+]
 A tartagura fica irritada e joga a garrafa com muuuuuuuuuita força na cara de um amigo.
 E ela disse:
 
@@ -189,3 +301,110 @@ O que você faz:
 [[investigar]] 
 ou
 [[jogar novamente no mar]]
+
+
+
+
+
+
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+  background: radial-gradient(circle at 50% 20%, #031956 0%, #02083E 40%, #000010 100%);
+  color: #e0f7fa; /* tom azulado suave em vez de branco puro */
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  /* Efeito "névoa subaquática" */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+tw-sidebar {
+  display: none !important;
+}
+
+tw-passage {
+  background: rgba(0, 20, 40, 0.6);
+  border: 2px solid rgba(0, 234, 255, 0.4);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 234, 255, 0.15), 0 0 60px rgba(0, 0, 50, 0.6);
+  margin: auto;
+  transition: background 0.3s;
+}
+
+tw-passage:hover {
+  background: rgba(0, 20, 40, 0.75);
+}
+tw-link {
+  display: inline-block;
+  margin: 8px 5px;
+  padding: 10px 22px;
+  background: linear-gradient(145deg, #03255c, #01122f);
+  color: #e0f7fa;
+  text-decoration: none;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 16px;
+  border-radius: 30px;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.6),
+    inset 0 2px 4px rgba(255, 255, 255, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, text-shadow 0.2s ease;
+}
+
+tw-link:hover {
+  transform: scale(1.04);
+  color: #a8faff;
+  text-shadow: 0 0 6px #00eaff, 0 0 12px #0077b6;
+  box-shadow:
+    0 3px 10px rgba(0, 234, 255, 0.25),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+tw-link:active {
+  transform: scale(0.96);
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.6),
+    inset 0 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+
+tw-passage[tags~="inicio"] {
+  text-align: center;
+}
+
+tw-passage[tags~="peixe"],
+tw-passage[tags~="tartaruga"],
+tw-passage[tags~="tubarao"],
+tw-passage[tags~="baleia"] {
+  background-color: rgba(0, 20, 40, 0.6);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 220px auto;
+}
+
+/* Pequeno brilho nos sprites */
+tw-passage[tags~="peixe"] {
+  background-image: url("imagens/peixe.png");
+}
+tw-passage[tags~="tartaruga"] {
+  background-image: url("imagens/tartaruga.png");
+}
+tw-passage[tags~="tubarao"] {
+  background-image: url("imagens/tubarao.png");
+}
+tw-passage[tags~="baleia"] {
+  background-image: url("imagens/baleia.png");
+}
